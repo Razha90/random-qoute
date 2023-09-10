@@ -1,0 +1,74 @@
+.loader-screen:nth-child(1) div {
+    top: 0;
+    left: 0;
+}
+
+.loader-screen:nth-child(2) div {
+    top: 0;
+    right: 0;
+    transform: rotate(180deg);
+}
+
+.loader-screen div {
+    height: 100%;
+    width: 50vw;
+    position: absolute;
+    background-color: var(--dark-green);
+}
+
+.loading div {
+    width: 0vw;
+    
+}
+
+.loader-screen div:nth-child(1) {
+    z-index: 90;
+    transition: width 2s ease;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    overflow: hidden;
+}
+
+.loader-screen:nth-child(1) div:nth-child(1) {
+    z-index: 100;
+}
+
+.img-setting{
+    position: relative;
+    left: 23px;
+    width: 46px;
+    animation: rotate 3s linear infinite;
+}
+
+.img-setting-done {
+    animation: none;
+}
+
+.loader-screen div:nth-child(2) {
+    opacity: .8;
+    z-index: 80;
+    background-color: var(--dark-green);
+    transition: width 2.2s ease;
+}
+
+.loader-screen div:nth-child(3) {
+    opacity: .6;
+    z-index: 60;
+    transition: width 2.4s ease;
+}
+
+.loader-screen div:nth-child(4) {
+    opacity: .4;
+    z-index: 40;
+    transition: width 2.6s ease;
+}
+
+@keyframes rotate {
+    0% {
+      transform: rotate(0deg); /* Rotasi awal */
+    }
+    100% {
+      transform: rotate(360deg); /* Rotasi akhir */
+    }
+  }

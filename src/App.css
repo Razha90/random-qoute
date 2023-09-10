@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&display=swap');
+ 
+ :root {
+  --pink: #27005D;
+  --dark-green: #9400FF;
+  --yellow: #AED2FF;
+  --purple: #E4F1FF;
+  --fonts:'Caveat', cursive;
+}
+
+*::after, *::before, * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 12px;
+}
+
+button {
+  color: white;
+  font-size: 4rem;
+}
+
+body {
+  overflow: hidden;
+}
+
+.App {
+  background-color: var(--pink);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.no-select {
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE 10+ */
+  user-select: none; /* Standar */
+}

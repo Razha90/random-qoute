@@ -1,0 +1,102 @@
+.wrap-box {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 700px;
+}
+
+
+.quote-border {
+    width: 100%;
+    padding: 2rem;
+    background-color: black;
+    font-family: var(--fonts);
+    font-size: 4rem;
+    font-weight: 600;
+    position: relative;
+    color: white;
+    transition: .5s ease;
+    border:  4px solid black;
+}
+
+.author-box {
+    text-align: right;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.button-box {
+    background-color: black;
+    width: 10rem;
+    padding: 0rem 3rem;
+    color: white;
+    border: 4px solid black;
+    transition: 0.5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-box:hover{
+    border: 4px solid white;
+}
+
+.quote-animate {
+    background-color: white;
+}
+
+.button-animate {
+    background-color: white;
+    border: 4px solid white;
+    color: black;
+    cursor: progress;
+}
+
+.buttons-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: baseline;
+    width: 100%;
+    margin: 2.5rem;
+    text-align: center;
+}
+
+.item-box {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-func {
+    gap: 2rem;
+}
+
+.button-func button {
+    border: none;
+    background-color: transparent;
+    width: 3rem;
+    height: 3rem;
+    transition: background .5s ease;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-func button:hover {
+    background-color: white;
+}
+
+#twitter-box, #tumblr-box, #refresh-box {
+    width: 3rem;
+    background-color: transparent;
+}
+
+@media screen and (max-width: 710px) {
+    .wrap-box {
+        padding: 0 1rem;
+    }
+
+}
