@@ -3,7 +3,9 @@ import addClass from "../Function/addClass";
 import remove from "../Function/removeClass";
 import "./borderBox.css";
 import ShareOnTwitter from "../Function/twitter";
+import twitterimg from "../img/twitter.svg";
 import ShareOnTumblr from "../Function/tumblr";
+import refreshimg from "../img/refresh.png";
 
 const BorderBox = ({ quotes, randomQuote, refresh }) => {
   const [set, setS] = useState(false);
@@ -61,7 +63,7 @@ const animateQoute = () => {
       </div>
       <div className="buttons-box">
         <div className="item-box button-func">
-        <button onClick={ajg} title="Refresh"><img alt="refresh" src="/refresh.png" id="refresh-box"/></button>
+        <button onClick={ajg} title="Refresh"><img alt="refresh" src={refreshimg} id="refresh-box"/></button>
         </div>
         <div className="item-box">
         <button title="Play Random" onClick={babi} className="button-box">
@@ -69,8 +71,9 @@ const animateQoute = () => {
         </button>
         </div>
         <div className="item-box button-func">
-          <button onClick={twitter} title="Twitter"><img alt="twitter" src="/twitter.svg" id="twitter-box"/></button>
+          <button onClick={twitter} title="Twitter"><img alt="twitter" src={twitterimg} id="twitter-box"/></button>
           <button onClick={tumblr} title="Tumblr"><img alt="refresh" src="/tumblr.svg" id="tumblr-box"/></button>
+        
         </div>
       </div>
     </div>
